@@ -4,6 +4,8 @@
 //#include "pid.hpp"
 //#include "motorfunctions.hpp"
 #include "navigationfunctions.hpp"
+#include "userinterface.hpp"
+#pragma once
 using namespace pros;
 /*
 TO BE DONES:
@@ -32,4 +34,8 @@ extern motorw kiwimotors[];
 extern motorw xdrivemotors[];
 extern basecontroller base;
 extern coordcontroller mover;
+extern opcontrolcontroller useonlyinopcontrol;
 //TBD: add all the other controllers
+
+//std::vector of processed position commands
+extern std::vector<motion> processedpaths;
